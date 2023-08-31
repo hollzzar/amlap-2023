@@ -18,4 +18,3 @@ These results align with previous laboratory-based research showing differential
 ## Included materials
 
 In this repository, you will find the poster presenting these data, along with the R Markdown file that produced the poster and the R scripts containing the underlying analysis.
-In addition, the *photos* folder contains a few snapshots from my time in Palenque.

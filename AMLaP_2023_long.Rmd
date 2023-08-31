@@ -1,0 +1,140 @@
+---
+title: "Mi casa es tu posá: Exploring the bilingual mental lexicon in speakers of Spanish and Palenquero"
+poster_height: "120cm"
+poster_width: "80cm"
+font_family: Avenir
+titletext_fontfamily: Avenir
+primary_colour: "#001E44"
+secondary_colour: "#009CDE"
+accent_colour: "#91959C"
+author:
+  - name: Holly A. Zaharchuk
+    affil: 1, 2
+  - name: John M. Lipski
+    affil: 1, 3
+  - name: Janet G. van Hell
+    affil: 1, 2
+affiliation:
+  - num: 1
+    address: "Center for Language Science"
+  - num: 2
+    address: "Department of Psychology"
+  - num: 3
+    address: "Department of Spanish, Italian, and Portuguese"
+  - address: "The Pennsylvania State University"
+column_numbers: 2
+logoright_name: "bild_qr.svg"
+logoleft_name: "psu_nsf.svg"
+titlebox_borderwidth: "0.5cm"
+sectitle_borderwidth: "1mm"
+titlebox_bordercol: "#001E44"
+author_textcol: "#FFFFFF"
+title_textsize: "68pt"
+author_textsize: "48pt"
+affiliation_textsize: "42pt"
+sectitle_textsize: "30pt"
+sectitle2_textsize: "26pt"
+body_textsize: "22pt"
+sectitle_boxshape: "3mm 0mm"
+link_col: "#009CDE"
+columnline_style: solid
+columnline_col: "#91959C"
+columnline_width: "2mm"
+output: 
+  posterdown::posterdown_html:
+    self_contained: false
+    css: "style.css"
+---
+
+```{r setup, include = FALSE, message = FALSE, warning = FALSE}
+## R setup ##
+
+# knitr settings
+# chooseCRANmirror(graphics = FALSE, ind = 1)
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+# knitr::knit_hooks$set(document  =  function(x) {sub('\\usepackage[]{color}', '\\usepackage{xcolor}', x, fixed  =  TRUE)})
+```
+
+```{r load, echo = FALSE}
+# Load extra packages as needed
+library(kableExtra)
+
+# Load variables/analyses
+source("/Users/hollyzaharchuk/Mirror/Project_PIRE/data/6_tabs.R")
+```
+
+# Background
+
+- Strong evidence for language nonselective bilingual lexical access regardless of context, similarity, and modality (Van Hell & Tanner, 2012)
+- Psycholinguistic research is typically conducted in laboratory settings with WEIRD populations, limiting generalizability (Muthukrishna et al., 2020)
+- Palenquero: Afro-Hispanic creole language spoken in San Basilio de Palenque, Colombia, in tandem with its lexifier language, Spanish (Lipski, 2019)
+
+<div class = "my-quest"><b><font size = 24>Are Spanish and Palenquero co-active in bilingual word recognition?</font/></b></div>
+
+# Methods 
+
+<div class = "my-div">Bilingual Spanish-Palenquero participants</div>
+```{r par_cont, out.width = "100%", out.extra = "", dpi = 300}
+lhq_cont 
+```
+
+```{r par_cat, out.width = "100%", out.extra = "", dpi = 300}
+lhq_cat
+```
+
+<div class = "my-div">Auditory mixed-language lexical decision tasks in Spanish and Palenquero</div>
+```{r stims, out.width = "100%", out.extra = "", dpi = 300}
+stim_tab
+```
+
+<div class = "my-div">Analysis approach</div>
+```{r model_info}
+model_tab
+```
+
+# Results
+
+<div class = "my-div">Overall auditory lexical decision performance</div>
+```{r mean_dat, out.width = "100%", out.extra = "", dpi = 300}
+knitr::include_graphics("~/Mirror/Project_PIRE/data/figs/mean_plot.png")
+```
+
+<div class = "my-div">Change in performance over time</div>
+```{r trial_rt, out.width = "100%", out.extra = "", dpi = 300}
+knitr::include_graphics("~/Mirror/Project_PIRE/data/figs/main_rt.png")
+```
+
+<div class = "my-ref">References and acknowledgements</div>
+
+<div class = "my-text"><font size = 5>Dijkstra, T., & Van Heuven, W.J. (2002). The architecture of the bilingual word recognition system: From identification to decision. *Bilingualism: Language and cognition*, *5*(3), 175-197.</font></div>
+
+<div class = "my-text"><font size = 5>Lipski, J.M. (2019). Field-testing code-switching constraints: A report on a strategic languages project. *Languages*, *4*(1), 7.</font></div>
+
+<div class = "my-text"><font size = 5>Muthukrishna, M., Bell, A.V., Henrich, J., Curtin, C.M., Gedranovich, A., McInerney, J., & Thue, B. (2020). Beyond Western, Educated, Industrial, Rich, and Democratic (WEIRD) psychology: Measuring and mapping scales of cultural and psychological distance. *Psychological science*, *31*(6), 678-701.</font></div>
+
+<div class = "my-text"><font size = 5>Van Hell, J.G. \& Tanner, D. (2012). Second language proficiency and cross-language lexical activation. *Language learning*, *62*, 148-171.</font></div>
+
+<div class = "my-ack"><font size = 4>*Supported by BCS-2234907 to Zaharchuk and Van Hell, BCS-2041264 to Van Hell, OISE 1545900 to Lipski and Van Hell, and University Graduate Fellowship to Zaharchuk*</font></div>
+
+<div class = "my-div">Comparison of average performance in each language</div>
+```{r lex_dat, out.width = "100%", out.extra = "", dpi = 300}
+knitr::include_graphics("~/Mirror/Project_PIRE/data/figs/corr_plot.png")
+```
+
+<div class = "my-div">Lexicality effect</div>
+```{r model_acc, out.width = "100%", out.extra = "", dpi = 300}
+knitr::include_graphics("~/Mirror/Project_PIRE/data/figs/contrast_1_plot.png")
+```
+
+<div class = "my-div">Cross-language activation</div>
+```{r model_rt, out.width = "100%", out.extra = "", dpi = 300}
+knitr::include_graphics("~/Mirror/Project_PIRE/data/figs/contrast_2_plot.png")
+```
+
+# Conclusions
+
+- Evidence for co-activation of Spanish and Palenquero during bilingual word recognition: Faster RTs for distractors than nonwords
+- Effect of relative proficiency: Spanish as non-target language induced stronger co-activation effects with Palenquero as target language than vice-versa (*see* BIA+ model, Dijkstra & Van Heuven, 2002)
+- Translating labwork into fieldwork is crucial for testing psycholinguistic theory: Earlier findings of cross-language activation extend to contact languages in community settings
+
+
